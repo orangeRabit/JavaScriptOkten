@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // 1) створити функцію яка приймає масив та виводить його
+    // let arr = ['Andrii', 'Nastya', 'Olga', 'Ira']
+    //
+    // function logArr(array) {
+    //     console.log(array);
+    // }
+    // logArr(arr)
+
+    // 2) створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попередню функцію.
+    // function createArray(lenght) {
+    //   let array = [];
+    //   for (let i = 0; i < lenght; i++) {
+    //     array.push(Math.floor(Math.random()*100))
+    //
+    //   }
+    //   console.log(array);
+    // }
+    //
+    // createArray(15)
+
+    // 3) створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+    // function sortMin(num1, num2, num3) {
+    //     if (num1 < num2 && num1 < num3) {
+    //         console.log(num1);
+    //     }
+    //     if (num2 < num1 && num2 < num3) {
+    //         console.log(num2);
+    //     }
+    //     if (num3 < num1 && num3 < num2) {
+    //         console.log(num3);
+    //     }
+    // }
+    //
+    //
+    //     sortMin(1111,222,3)
+
+    // 4) створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+    // function sortMax(num1, num2, num3) {
+    //     if (num1 > num2 && num1 > num3) {
+    //         console.log(num1);
+    //     }
+    //     if (num2 > num1 && num2 > num3) {
+    //         console.log(num2);
+    //     }
+    //     if (num3 > num1 && num3 > num2) {
+    //         console.log(num3);
+    //     }
+    // }
+    // sortMax(1111,222,3)
+
+    // 5) створити функцію яка повертає найбільше число з масиву
+    // let newArr = [392, 44, 29, 62, 32, 19, 24, 53, 19, 60, 82, 61, 18, 4, 14, 51];
+    //
+    // function maxNum(arr) {
+    //     let numberMax = arr[0];
+    //     for (const arrElement of arr) {
+    //         if (arrElement >numberMax) {
+    //             numberMax = arrElement;
+    //         }
+    //     }
+    //     return numberMax
+    // }
+    //
+    // let number = maxNum(newArr)
+    // console.log(number);
+
+    // 6) створити функцію яка повертає найменьше число з масиву
+    // let newArr = [392, 44, 29, 62, 32, 19, 24, 3, 19, 60, 82, 61, 18, 4, 14, 51];
+    // function minNum(arr) {
+    //     let numberMin = arr[0];
+    //     for (const arrElement of arr) {
+    //         if (arrElement < numberMin) {
+    //             numberMin = arrElement;
+    //         }
+    //     }
+    //     return numberMin
+    // }
+    //
+    // let number = minNum(newArr)
+    // console.log(number);
+
+    // 7) створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+    // let newArr = [392, 44, 29, 62, 32, 19, 24, 3, 19, 60, 82, 61, 18, 4, 14, 51];
+    //
+    // function suma(arr) {
+    //     let num1 = 0;
+    //     for (const arrElement of arr) {
+    //         num1 = num1+arrElement
+    //     }
+    //     return num1
+    // }
+    //
+    // let sumNum = suma(newArr);
+    // console.log(sumNum);
+
+    // 8) створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+    // let newArr = [392, 44, 29, 62, 32, 19, 24, 3, 19, 60, 82, 61, 18, 4, 14, 51];
+    //
+    // function avg(arr) {
+    //     let num1 = 0;
+    //     let numAvg;
+    //     for (const arrElement of arr) {
+    //         num1 = num1+arrElement;
+    //         numAvg = num1/arr.length
+    //     }
+    //     return numAvg
+    // }
+    //
+    // let avgNum = avg(newArr);
+    // console.log(avgNum);
+
+    // 9) Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+    // EXAMPLE:
+    //         [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+   //
+   //  let arrObj = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+   //
+   //  function keyLog(arr) {
+   //      let array = [];
+   //      for (const arrElement of arr) {
+   //          for (const arrElementKey in arrElement) {
+   //              array.push(arrElementKey)
+   //          }
+   //
+   //      }
+   //      return array
+   //  }
+   //
+   // let arrKey = keyLog(arrObj);
+   //  console.log(arrKey);
+
+    // 10) Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+    // EXAMPLE:
+    //         [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+    // let arrObj = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+    //
+    // function keyfieldLog(arr) {
+    //     let array = [];
+    //     for (const arrElement of arr) {
+    //         for (const key in arrElement) {
+    //             array.push(arrElement[key]);
+    //         }
+    //     }
+    //     return array
+    // }
+    //
+    // let fieldArr = keyfieldLog(arrObj);
+    // console.log(fieldArr);
+
+    // 11) створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+    //         EXAMPLE:
+    // [1,2,3,4]
+    //         [2,3,4,5]
+    // результат
+    //         [3,5,7,9]
+    // let arr1 = [1,2,3,4];
+    // let arr2 = [2,3,4,5];
+    //
+    // function arrSumator(arrOne, arrTwo) {
+    //     let newArray = [];
+    //
+    //     for (let i = 0; i < arrOne.length; i++) {
+    //         newArray.push(arrOne[i]+arrTwo[i])
+    //     }
+    //
+    //     return newArray
+    // }
+    //
+    // let result = arrSumator(arr1, arr2)
+    // console.log(result);
+
+    //CLASSWORK
+
+    // - Дано список імен.
+    // let n1 = '    Harry       Potter      '
+    // let n2 = '    Ron       Whisley      '
+    // let n3 = '    Hermione       Granger      '
+    // // Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
+    // // let n1 = 'Harry Potter'
+    // // let n2 = 'Ron Whisley'
+    // // let n3 = 'Hermione Granger'
+    //
+    // function replacer(item1, item2, item3) {
+    //     let validName1 = item1.replace(/ +/g, ' ').trim()
+    //     let validName2 = item2.replace(/ +/g, ' ').trim()
+    //     let validName3 = item3.replace(/ +/g, ' ').trim()
+    //     console.log(validName1);
+    //     console.log(validName2);
+    //     console.log(validName3);
+    //
+    // }
+    // replacer(n1,n2,n3)
+
+    // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+    // Двожина масиву від 2 до 100
+    // EXAMPLE:
+    //     [1,0,6,0,3] => [1,6,3,0,0]
+    //     [0,1,2,3,4] => [1,2,3,4,0]
+    //     [0,0,1,0]   => [1,0,0,0]
+    //
+    // let newArr = [1,0,6,0,3];
+    //
+    // function pusher(arr) {
+    //     let zerro = [];
+    //     let num = [];
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] === 0) {
+    //             zerro.push(arr[i])
+    //         } else {
+    //             num.push(arr[i])
+    //         }
+    //     }
+    //     return num.concat(zerro)
+    // }
+    //
+    // let newArray = pusher(newArr);
+    // console.log(newArray);
+
+    //   - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
+    //   (Math використовувати заборонено);
+    //
+    // function maxNum() {
+    //     let numberMax = arguments[0];
+    //     let numberMin = arguments[0];
+    //
+    //     for (const Element of arguments) {
+    //         if (Element > numberMax) {
+    //             numberMax = Element;
+    //         }
+    //         if (Element < numberMin) {
+    //             numberMin = Element;
+    //         }
+    //     }
+    //     console.log(numberMax);
+    //     return numberMin
+    // }
+    //
+    // let number = maxNum(11,22,3,4,5,22)
+    // console.log(number);
+
+</script>
+</body>
+</html>
