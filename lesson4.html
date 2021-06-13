@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 1 створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+    // створити пустий масив, наповнити його 10 об'єктами User
+    // function User(id, name, surname, email, phone) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.surname = surname;
+    //     this.email = email;
+    //     this.phone = phone;
+    // }
+    //
+    // let andrii = new User(1, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii1 = new User(2, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii2 = new User(3, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii3 = new User(4, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii4 = new User(5, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii5 = new User(6, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii6 = new User(7, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii7 = new User(8, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii8 = new User(9, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // let andrii9 = new User(10, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972)
+    // //
+    // console.log(andrii);
+    // let userArr = [andrii,andrii1,andrii2,andrii3,andrii4,andrii5,andrii6,andrii7,andrii8,andrii9]
+    // console.log(userArr);
+
+    // 2 створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+    // створити пустий масив, наповнити його 10 об'єктами Client
+    // function Client (id, name, surname, email, phone, order = []) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.surname = surname;
+    //     this.email = email;
+    //     this.phone = phone;
+    //     this.order = [order];
+    // }
+    // let andrii = new Client(1, "Andrii", "Puliak", "pulyak.a.av@gmail.com", 380962235972, ['phone', 'laptop', 'CreditCard'])
+    // console.log(andrii);
+
+    // 3 Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску,
+    // максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+    // -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"
+    // -- info () - яка виводить всю інформацію про автомобіль
+    // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+    // -- changeYear (newValue) - змінює рік випуску на значення newValue
+    // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+    //
+    // function Car (model, maker, yearEdition, maxSpeed, engine,) {
+    //     this.model = model;
+    //     this.maker = maker;
+    //     this.yearEdition = yearEdition;
+    //     this.maxSpeed = maxSpeed;
+    //     this.engine = engine;
+    //
+    //     this.drive = () => {
+    //         console.log(`демо зі швидкістю ${this.maxSpeed} на годину`)
+    //     }
+    //
+    //     this.info = () => {
+    //         console.log(`Модель ${model}`);
+    //         console.log(`Виробник ${maker}`);
+    //         console.log(`Рік випуску ${yearEdition}`);
+    //         console.log(`Максимальна швидкість ${maxSpeed}`);
+    //         console.log(`Об'єм двигуна ${engine}`);
+    //     }
+    //
+    //     this.increaseMaxSpeed = (newSpeed) => {
+    //         this.maxSpeed = newSpeed;
+    //     }
+    //
+    //     this.changeYear = (newValue) => {
+    //         this.yearEdition = newValue;
+    //     }
+    //
+    //     this.addDriver = (driver) => {
+    //         this.driver = driver
+    //     }
+    //
+    // }
+    //
+    // let volvo = new Car('Volvo', 'Konungariket Sverige', 2021, 240, 2.4)
+    // //Використав клієнта з попередньго завдання
+    // volvo.addDriver(andrii);
+    // console.log(volvo);
+
+    // 4 Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+    // -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"
+    // -- info () - яка виводить всю інформацію про автомобіль
+    // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+    // -- changeYear (newValue) - змінює рік випуску на значення newValue
+    // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+    // class Car {
+    //     constructor(model, maker, yearEdition, maxSpeed, engine) {
+    //         this.model = model;
+    //         this.maker = maker;
+    //         this.yearEdition = yearEdition;
+    //         this.maxSpeed = maxSpeed;
+    //         this.engine = engine;
+    //     }
+    //
+    //     drive() {
+    //         console.log(`демо зі швидкістю ${this.maxSpeed} на годину`)
+    //     }
+    //
+    //     info() {
+    //         console.log(`Модель ${this.model}`);
+    //         console.log(`Виробник ${this.maker}`);
+    //         console.log(`Рік випуску ${this.yearEdition}`);
+    //         console.log(`Максимальна швидкість ${this.maxSpeed}`);
+    //         console.log(`Об'єм двигуна ${this.engine}`);
+    //     }
+    //
+    //     increaseMaxSpeed(newSpeed) {
+    //         this.maxSpeed = newSpeed;
+    //     }
+    //
+    //     changeYear(newValue) {
+    //         this.yearEdition = newValue;
+    //     }
+    //
+    //     addDriver(driver) {
+    //         this.driver = driver
+    //     }
+    // }
+    //
+    // const vwPolo = new Car('Polo', 'German', 2018, 180, 1.4);
+    // console.log(vwPolo);
+    // vwPolo.info();
+
+    // 5 Взяти масив з завдання 1.
+    // - Відфільтрувати , залишивши тільки об'єкти з парними id
+    // - Відсортувати його по id. по зростанню
+    // - Відсортувати його по id. по спаданню
+    // console.log(userArr);
+    // const userId = userArr.filter(user => user.id % 2 === 0);
+    //
+    // console.log(userId);
+    // const sort1= userArr.sort();
+    // console.log(sort1);
+    // const sort2= userArr.sort((a, b) => b.id-a.id);
+    // console.log(sort2);
+
+    //
+    // 6. Взяти масив з завдання 2.
+    // Відсортувати його по кількості товарів в полі order. по спаданню
+</script>
+</body>
+</html>
